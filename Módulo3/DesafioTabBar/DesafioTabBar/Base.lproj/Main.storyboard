@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="T6S-40-iyB">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item 2-->
+        <scene sceneID="8sZ-tP-s6q">
+            <objects>
+                <viewController id="mjt-8Q-V0s" customClass="Tela02VC" customModule="DesafioTabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ga9-ED-Vmv">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="CIU-fK-Wzu"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="nZf-No-bGI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pq8-l3-IFv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="494" y="151"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="4Jy-rY-0lQ">
+            <objects>
+                <viewController id="SFb-zm-O1p" customClass="Tela03VC" customModule="DesafioTabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="299-zh-4XZ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="oUw-gc-CzQ"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="NoT-WS-GEc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="47u-vR-GXi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1312" y="-223"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="cYd-BD-vYY">
+            <objects>
+                <viewController id="A9N-Ud-UBm" customClass="Tela01VC" customModule="DesafioTabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dAO-cr-soR">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d31-SP-MpM">
+                                <rect key="frame" x="129" y="94" width="135" height="135"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="135" id="OtU-ET-6vD"/>
+                                    <constraint firstAttribute="width" constant="135" id="ytz-V5-osL"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RCf-Nu-hoP">
+                                <rect key="frame" x="143" y="254" width="107" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Editar Foto"/>
+                                <connections>
+                                    <action selector="tappedEditButton:" destination="A9N-Ud-UBm" eventType="touchUpInside" id="7qH-iR-TCN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybe-eI-Izw">
+                                <rect key="frame" x="20" y="309" width="353" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcK-Tw-8jS">
+                                <rect key="frame" x="148.66666666666666" y="409" width="96" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Adicionar"/>
+                                <connections>
+                                    <action selector="tappedAddButton:" destination="A9N-Ud-UBm" eventType="touchUpInside" id="woy-3b-jJm"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="rGs-xi-DI3">
+                                <rect key="frame" x="0.0" y="469" width="393" height="300"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O63-Fo-U82">
+                                <rect key="frame" x="20" y="350" width="353" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4fU-RT-SDv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="O63-Fo-U82" firstAttribute="leading" secondItem="4fU-RT-SDv" secondAttribute="leading" constant="20" id="9Nu-PN-9PG"/>
+                            <constraint firstItem="4fU-RT-SDv" firstAttribute="trailing" secondItem="O63-Fo-U82" secondAttribute="trailing" constant="20" id="CuE-mb-WlP"/>
+                            <constraint firstItem="rGs-xi-DI3" firstAttribute="top" secondItem="fcK-Tw-8jS" secondAttribute="bottom" constant="25" id="HU9-dW-tiy"/>
+                            <constraint firstItem="d31-SP-MpM" firstAttribute="top" secondItem="4fU-RT-SDv" secondAttribute="top" constant="35" id="Hm4-uK-fzb"/>
+                            <constraint firstItem="rGs-xi-DI3" firstAttribute="trailing" secondItem="4fU-RT-SDv" secondAttribute="trailing" id="Idc-zv-gZO"/>
+                            <constraint firstItem="rGs-xi-DI3" firstAttribute="leading" secondItem="4fU-RT-SDv" secondAttribute="leading" id="JsV-cU-VIe"/>
+                            <constraint firstItem="RCf-Nu-hoP" firstAttribute="centerX" secondItem="dAO-cr-soR" secondAttribute="centerX" id="NqE-ST-uDA"/>
+                            <constraint firstItem="fcK-Tw-8jS" firstAttribute="centerX" secondItem="dAO-cr-soR" secondAttribute="centerX" id="Qco-Cz-K4u"/>
+                            <constraint firstItem="rGs-xi-DI3" firstAttribute="bottom" secondItem="4fU-RT-SDv" secondAttribute="bottom" id="RnE-ox-qX5"/>
+                            <constraint firstItem="RCf-Nu-hoP" firstAttribute="top" secondItem="d31-SP-MpM" secondAttribute="bottom" constant="25" id="RzA-Rb-Rfd"/>
+                            <constraint firstItem="d31-SP-MpM" firstAttribute="centerX" secondItem="dAO-cr-soR" secondAttribute="centerX" id="UEM-Xq-D2J"/>
+                            <constraint firstItem="O63-Fo-U82" firstAttribute="top" secondItem="ybe-eI-Izw" secondAttribute="bottom" constant="20" id="XbA-VT-RMa"/>
+                            <constraint firstItem="fcK-Tw-8jS" firstAttribute="top" secondItem="O63-Fo-U82" secondAttribute="bottom" constant="25" id="bbf-yl-jcM"/>
+                            <constraint firstItem="ybe-eI-Izw" firstAttribute="leading" secondItem="4fU-RT-SDv" secondAttribute="leading" constant="20" id="f2b-8T-4Be"/>
+                            <constraint firstItem="4fU-RT-SDv" firstAttribute="trailing" secondItem="ybe-eI-Izw" secondAttribute="trailing" constant="20" id="lob-vO-xex"/>
+                            <constraint firstItem="ybe-eI-Izw" firstAttribute="top" secondItem="RCf-Nu-hoP" secondAttribute="bottom" constant="20" id="uBV-hf-xSC"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="gpi-Sb-5D0"/>
+                    <connections>
+                        <outlet property="nameTextField" destination="O63-Fo-U82" id="T05-Kq-SVw"/>
+                        <outlet property="selectedImage" destination="d31-SP-MpM" id="cxa-Zw-xVU"/>
+                        <outlet property="tableView" destination="rGs-xi-DI3" id="jA2-nC-0VH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5YY-ee-ecb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="493.89312977099235" y="-587.32394366197184"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="rbX-t1-4HZ">
+            <objects>
+                <tabBarController id="T6S-40-iyB" customClass="TabBarController" customModule="DesafioTabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qtr-DV-TJq">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="A9N-Ud-UBm" kind="relationship" relationship="viewControllers" id="BXa-L0-Avc"/>
+                        <segue destination="mjt-8Q-V0s" kind="relationship" relationship="viewControllers" id="0DN-ac-v4b"/>
+                        <segue destination="SFb-zm-O1p" kind="relationship" relationship="viewControllers" id="KGX-18-BcM"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KMt-I7-UX1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-409" y="-223"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
